@@ -1,0 +1,98 @@
+
+<head>
+	
+	<style type="text/css">
+		
+		body { 
+			background-color: silver;
+		}
+
+		.col50pc{
+			width: 100vw; 
+			background-color: white;
+			padding: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+		}
+
+		@media(min-width: 50em){
+			.col50pc{
+				width: 50vw; background-color: white;
+			}
+		}
+
+		.colfix{
+			width: 400px; background-color: white;
+			padding: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+		}
+
+		.fullwidth{
+			width: 100%;
+		}
+
+	</style>
+
+	<script
+  src="https://code.jquery.com/jquery-3.4.0.js"
+  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+  crossorigin="anonymous"></script>
+
+	<script>
+
+		var imagePath = "https://dummyimage.com/xxxxxxxx/aaaaff/ffffff";
+		
+		$( document ).ready(function(){
+			console.log("Ready to load responsive images");
+			reloadResponsiveImage();
+		});
+
+		$( window ).resize(function() {
+  			console.log( "Resize" );
+  			reloadResponsiveImage();
+		});
+
+		function reloadResponsiveImage(){
+			var respImgs = $(".responsiveImg");
+			$( ".responsiveImg" ).each( function( index, element ){
+    			var img = $(element);
+    			var text  = img.attr("data-image");
+    			var width = img.width();
+    			var dimensions = width+"x"+width;
+
+    			var src = imagePath.replace("xxxxxxxx", dimensions );
+    			src = src + "&text=" + text + "  " + dimensions;
+
+    			img.attr("src", src);
+
+    			console.log( $(element) );
+
+			});
+
+
+		}
+
+	</script>
+
+</head>
+
+<body>
+
+
+	<div class="col50pc" style="">
+		<h1>Pixel-perfect responsive images with JavaScript.</h1>
+		<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+
+
+
+		<img src = "https://dummyimage.com/100x100/aaaaaa/ffffff&text=loading..." class="responsiveImg fullwidth" data-image="I am responsive"/>
+
+	</div>
+
+
+</body>
+
+</html>

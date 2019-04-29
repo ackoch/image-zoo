@@ -1,0 +1,73 @@
+
+<head>
+	
+	<style type="text/css">
+		
+		body { 
+			background-color: silver;
+		}
+
+		.col50pc{
+			width: 100vw; 
+			background-color: white;
+			padding: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+		}
+
+		@media(min-width: 50em){
+			.col50pc{
+				width: 50vw; background-color: white;
+			}
+		}
+
+		.colfix{
+			width: 400px; background-color: white;
+			padding: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+		}
+
+		.fullwidth{
+			width: 100%;
+		}
+
+	</style>
+</head>
+
+<body>
+
+
+	<div class="col50pc" style="">
+		<h1>&lt;picture&gt; with Art Direction</h1>
+		<p>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+
+		<picture class="fullwidth">
+			
+			<source media="(max-width: 50em)"
+				    srcset="https://dummyimage.com/200x300/521b1b/fff&text=200x300+|+Portrait 200w,
+ 				            https://dummyimage.com/400x600/521b1b/fff&text=400x600+|+Portrait 400w,
+ 				            https://dummyimage.com/600x900/521b1b/fff&text=600x900+|+Portrait 600w,
+ 				            https://dummyimage.com/800x1200/521b1b/fff&text=800x1200+|+Portrait 800w"
+				    sizes="100vw" />
+
+			<source media="(min-width: 50em)"
+				    srcset="https://dummyimage.com/400x300/000/fff 400w,
+		                    https://dummyimage.com/800x600/000/fff 800w,
+		                    https://dummyimage.com/1600x1200/000/fff 1600w,
+		                    https://dummyimage.com/2000x900/000/fff 20000w"
+				    sizes="50vw" />
+
+
+
+			<img src = "https://dummyimage.com/100x100/0011cf/ffffff&text=++DEFAULT" class="fullwidth"/>
+
+		</picture>
+	</div>
+
+
+</body>
+
+</html>

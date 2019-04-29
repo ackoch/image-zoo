@@ -1,0 +1,59 @@
+<html>
+
+<head>
+	
+	<style type="text/css">
+		
+		body { 
+			background-color: silver;
+		}
+
+		.col50pc{
+			width: 100vw; 
+			background-color: white;
+			padding: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+		}
+
+		@media(min-width: 50em){
+			.col50pc{
+				width: 50vw; background-color: white;
+			}
+		}
+
+		.colfix{
+			width: 400px; background-color: white;
+			padding: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+		}
+
+		.fullwidth{
+			width: 100%;
+		}
+
+	</style>
+</head>
+
+<body>
+
+
+	<div class="colfix" style="">
+
+		<h1>Fixed &lt;img&gt; with pixel device ratio</h1>
+
+		<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis.</p>
+
+		<img srcset="https://dummyimage.com/300x200/000/fff 1x,
+		             https://dummyimage.com/600x400/000/fff 2x">
+
+	</div>
+
+
+
+</body>
+
+</html>
