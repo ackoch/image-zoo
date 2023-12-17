@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>	
+		<script src="./utils.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<title>Large Teaer with Adaptive Height</title>
+	</head>
+
+<body>
+
+	<div class="main">
+		<p id="dimensions-screen"></p>
+
+	
+		<div class="large-teaser"> 
+
+			<div class="text"> 
+				<p id="dimensions-card4"></p>
+				<p>Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.</p>
+				<p>Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
+				
+			</div>
+
+			<div class="image-wrapper">
+				<picture>
+
+					<source srcset="https://dummyimage.com/600x600/E6CFB8/000&text=square+600 600w,
+									https://dummyimage.com/800x800/E6CFB8/000&text=square+800 800w,
+									https://dummyimage.com/1000x1000/E6CFB8/000&text=square+1000 1000w"
+							sizes="30vw"
+							media="(min-width: 801px)">
+					
+					<source srcset="https://dummyimage.com/700x233/E6CFB8/000&text=panorama+700 700w,
+							https://dummyimage.com/800x266/E6CFB8/000&text=panorama+800 800w,
+							https://dummyimage.com/900x300/E6CFB8/000&text=panorama+900 900w,
+							https://dummyimage.com/1000x333/E6CFB8/000&text=panorama+1000 1000w,
+							https://dummyimage.com/1200x400/E6CFB8/000&text=panorama+1200 1200w,
+							https://dummyimage.com/1500x500/E6CFB8/000&text=panorama+1500 1500w"
+					sizes="80vw"
+					media="(max-width: 800px)">
+
+
+					<img src="https://dummyimage.com/600x600/E6CFB8/000&text=square+600" id="card4" >
+
+				</picture>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+
+</body>
+
+</html>

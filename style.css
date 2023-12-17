@@ -1,0 +1,165 @@
+html {
+    font-size: 14px;
+    padding: 0;
+  }
+  
+body { 
+    background-color: silver;
+    padding: 0;
+    margin: 0;
+}
+
+.hero{
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1024px;
+    aspect-ratio: 3 / 1;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+.main{
+    background-color: rgb(230, 230, 230);
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 1024px;
+    margin: auto;
+    padding: 2rem ;
+}
+
+
+.flex-container{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    margin: 1rem;
+    width: 100%;
+}
+
+.card img{
+    aspect-ratio: 1 / 1;
+}
+
+p{
+    background-color: rgb(225, 225, 225);
+    padding: 1rem;
+    margin: 0;
+    text-align: center; 
+    
+}
+
+.card img{
+    width: 100%;
+}
+
+
+@media(max-width: 800px){
+    .flex-container{
+        flex-wrap: wrap;        
+    }
+}
+
+.text-image{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.text-image .text{
+    width: 66%;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.text-image p{
+    background-color: rgb(255, 255, 255);
+}
+
+.text-image .image{
+    width: 33%;
+    aspect-ratio: 1 / 1;
+}
+
+@media(max-width: 800px){
+
+    .text-image{
+        flex-wrap: wrap;        
+    }
+
+    .text-image .text{
+        width: 100%;
+        order: 2;
+    }
+
+    .text-image .image{
+        width: 100%;
+        aspect-ratio: 3/1;
+        order: 1;
+    }
+
+    .text-image img{
+        width: 100%;
+        aspect-ratio: 3/1;
+        object-fit: cover;
+        order: 1;
+    }
+
+}
+
+.large-teaser{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.large-teaser .image-wrapper{
+    flex: 0 0 33%;
+    min-height: 100%;
+    background-color: rgb(111, 111, 111);
+    position: relative;
+}
+
+.large-teaser img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    object-position: 50% 0%;
+}
+
+@media(max-width: 800px){
+
+    .large-teaser{
+        flex-wrap: wrap;
+    }
+
+    .large-teaser .text{
+        width: 100%;
+        order: 2;
+    }
+
+    .large-teaser .image-wrapper{
+        flex: 0 0 100%;
+    }
+
+    .large-teaser img{
+        width: 100%;
+        aspect-ratio: 3/1;
+        object-fit: cover;
+        order: 1;
+        position: relative;
+    }
+
+}

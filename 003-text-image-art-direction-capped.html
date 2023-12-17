@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<script src="./utils.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<title>Text Image Capped</title>
+	</head>
+
+	<body>
+
+		<div class="main">
+			<p id="dimensions-screen"></p>
+
+			<div class="flex-container"> 
+
+				<div class="text-image"> 
+
+					<div class="text"> 
+						<p id="dimensions-card3"></p>
+						<p>Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+					</div>
+
+					<div class="image"> 
+						<picture class="image">
+
+							<source srcset="https://dummyimage.com/600x600/C0CCDE/000&text=square+600"
+								media="(min-width: 1024px)">
+
+							<source srcset="https://dummyimage.com/500x500/C0CCDE/000&text=square+500 500w,
+											https://dummyimage.com/600x600/C0CCDE/000&text=square+600 600w,
+											https://dummyimage.com/700x700/C0CCDE/000&text=square+700 700w,
+											https://dummyimage.com/800x800/C0CCDE/000&text=square+800 800w,
+											https://dummyimage.com/900x900/C0CCDE/000&text=square+900 900w,
+											https://dummyimage.com/1000x1000/C0CCDE/000&text=square+1000 1000w,
+											https://dummyimage.com/1200x1200/C0CCDE/000&text=square+1200 1200w,
+											https://dummyimage.com/1500x1500/C0CCDE/000&text=square+1500 1500w"
+									sizes="30vw"
+									media="(min-width: 801px)">
+
+							<source srcset="https://dummyimage.com/700x233/C0CCDE/000&text=panorama+700 700w,
+											https://dummyimage.com/800x266/C0CCDE/000&text=panorama+800 800w,
+											https://dummyimage.com/900x300/C0CCDE/000&text=panorama+900 900w,
+											https://dummyimage.com/1000x333/C0CCDE/000&text=panorama+1000 1000w,
+											https://dummyimage.com/1200x400/C0CCDE/000&text=panorama+1200 1200w,
+											https://dummyimage.com/1500x500/C0CCDE/000&text=panorama+1500 1500w"
+									sizes="85vw"
+									media="(max-width: 800px)">
+
+							<img src="https://dummyimage.com/900x300/C0CCDE/000&text=panorama+900" id="card3" > 
+
+						</picture>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>	
+		<script src="./utils.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<title>Small Teaser Sizes</title>
+	</head>
+
+	<body>
+
+		<div class="main">
+			<p id="dimensions-screen"></p>
+
+			<div class="flex-container"> 
+
+				<div class="card">
+					<img srcset="
+								https://dummyimage.com/600x600/D5E8D4/000 600w,
+								https://dummyimage.com/800x800/D5E8D4/000 800w,
+								https://dummyimage.com/900x900/D5E8D4/000 900w,
+								https://dummyimage.com/1000x1000/D5E8D4/000 1000w,
+								https://dummyimage.com/1200x1200/D5E8D4/000 1200w,
+								https://dummyimage.com/1500x1500/D5E8D4/000 1500w"
+						sizes="(max-width: 800px) 90vw, (min-width: 801px) 40vw"
+						src="https://dummyimage.com/900x900/D5E8D4/000" id="card1">
+
+					<p id="dimensions-card1"></p>
+				</div>
+
+				<div class="card"> 
+					<img srcset="
+								https://dummyimage.com/600x600/D5E8D4/000 600w,
+								https://dummyimage.com/800x800/D5E8D4/000 800w,
+								https://dummyimage.com/900x900/D5E8D4/000 900w,
+								https://dummyimage.com/1000x1000/D5E8D4/000 1000w,
+								https://dummyimage.com/1200x1200/D5E8D4/000 1200w,
+								https://dummyimage.com/1500x1500/D5E8D4/000 1500w"
+						sizes="(max-width: 800px) 90vw, (min-width: 801px) 40vw"
+						src="https://dummyimage.com/300x300/000/fff" id="card2"> 
+					<p id="dimensions-card2"></p>
+				</div>
+				
+			</div>
+		</div>
+
+	</body>
+
+</html>

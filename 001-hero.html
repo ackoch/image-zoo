@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>	
+		<script src="./utils.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<title>Hero with Srcset</title>
+	</head>
+
+	<body>
+
+		<div class="hero">
+			<img 
+				srcset="https://dummyimage.com/300x100/D3C8D9/000 300w,
+						https://dummyimage.com/600x200/D3C8D9/000 600w,
+						https://dummyimage.com/900x300/D3C8D9/000 900w,
+						https://dummyimage.com/1200x400/D3C8D9/000 1200w,
+						https://dummyimage.com/1500x500/D3C8D9/000 1500w,
+						https://dummyimage.com/1800x600/D3C8D9/000 1800w"
+				src="https://dummyimage.com/300x100/D3C8D9/000"
+				id="hero"/>
+		</div>
+
+		<div class="main">
+			<p id="dimensions-screen"></p>
+			<p id="dimensions-hero"></p>
+		</div>
+
+	</body>
+
+</html>

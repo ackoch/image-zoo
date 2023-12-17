@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>	
+		<script src="./utils.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<title>All Together - HTML5</title>
+	</head>
+
+	<body>
+
+		<div class="hero">
+			<img 
+				srcset="https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_178854618:3by1?wid=600&hei=200&qlt=90&bfc=off 600w,
+						https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_178854618:3by1?wid=900&hei=300&qlt=90&bfc=off 900w,
+						https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_178854618:3by1?wid=1200&hei=400&qlt=90&bfc=off 1200w,
+						https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_178854618:3by1?wid=1500&hei=500&qlt=90&bfc=off 1500w"
+				id="hero"/>
+		</div>
+
+		<div class="main">
+			
+			<p id="dimensions-screen"></p>
+			<p id="dimensions-hero"></p>
+
+			<div class="flex-container"> 
+
+				<div class="card">
+					<img srcset="
+								https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_636568731:1by1?wid=600&hei=600&qlt=90&bfc=off 600w,
+								https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_636568731:1by1?wid=800&hei=800&qlt=90&bfc=off 800w,
+								https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_636568731:1by1?wid=1000&hei=1000&qlt=90&bfc=off 1000w,
+								https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_636568731:1by1?wid=1200&hei=1200&qlt=90&bfc=off 1200w"
+						sizes="(max-width: 800px) 90vw,
+								(min-width: 801px) 40vw"
+						id="card1">
+
+					<p id="dimensions-card1"></p>
+				</div>
+
+				<div class="card"> 
+					<img srcset="
+								https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_626510945:1by1?wid=600&hei=600&qlt=90&bfc=off 600w,
+								https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_626510945:1by1?wid=800&hei=800&qlt=90&bfc=off 800w,
+								https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_626510945:1by1?wid=1000&hei=1000&qlt=90&bfc=off 1000w,
+								https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_626510945:1by1?wid=1200&hei=1200&qlt=90&bfc=off 1200w"
+						sizes="(max-width: 800px) 90vw,
+							(min-width: 801px) 40vw"
+						src="https://dummyimage.com/300x300/000/fff" id="card2"> 
+					<p id="dimensions-card2"></p>
+				</div>
+				
+			</div>
+
+
+			<div class="text-image"> 
+
+				<div class="text"> 
+					<p id="dimensions-card3"></p>
+					<p>Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				</div>
+
+				<div class="image"> 
+					<picture class="image">
+
+						<source srcset="https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_622586678:1by1?wid=300&hei=300&qlt=90&bfc=off 1x,
+										https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_622586678:1by1?wid=600&hei=600&qlt=90&bfc=off 2x"
+								media="(min-width: 1024px)">
+
+						<source srcset="https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_622586678:1by1?wid=600&hei=600&qlt=90&bfc=off 600w,
+										https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_622586678:1by1?wid=800&hei=800&qlt=90&bfc=off 800w,
+										https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_622586678:1by1?wid=1000&hei=1000&qlt=90&bfc=off 1000w,
+										https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_622586678:1by1?wid=1200&hei=1200&qlt=90&bfc=off 1200w"
+								sizes="30vw"
+								media="(min-width: 801px)">
+
+						<source srcset="https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_622586678:3by1?wid=900&hei=300&qlt=90&bfc=off 900w,
+										https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_622586678:3by1?wid=1200&hei=400&qlt=90&bfc=off 1200w,
+										https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_622586678:3by1?wid=1500&hei=500&qlt=90&bfc=off 1500w"
+								sizes="85vw"
+								media="(max-width: 800px)">
+						
+						<img src="https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_622586678:3by1?wid=900&hei=300&qlt=90&bfc=off" id="card3" > 
+
+					</picture>
+
+				</div>
+			</div>
+
+
+			<div class="large-teaser"> 
+
+				<div class="text"> 
+					<p id="dimensions-card4"></p>
+					<p>Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+					<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper.</p>
+				</div>
+
+				<div class="image-wrapper">
+					<picture>
+
+						<source srcset="https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_437633256:1by1?wid=600&hei=600&qlt=90&bfc=off 600w,
+										https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_437633256:1by1?wid=900&hei=900&qlt=90&bfc=off 900w,
+										https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_437633256:1by1?wid=1200&hei=1200&qlt=90&bfc=off 1200w"
+								sizes="30vw"
+								media="(min-width: 801px)">
+						
+						<source srcset="https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_437633256:3by1?wid=600&hei=200&qlt=90&bfc=off 600w,
+										https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_437633256:3by1?wid=900&hei=300&qlt=90&bfc=off 900w,
+										https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_437633256:3by1?wid=1200&hei=400&qlt=90&bfc=off 1200w,
+										https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_437633256:3by1?wid=1500&hei=500&qlt=90&bfc=off 1500w"
+						sizes="80vw"
+						media="(max-width: 800px)">
+
+						<img src="https://techsupporteu.scene7.com/is/image/AEMEMEAPractice/AdobeStock_437633256:1by1?wid=1200&hei=400&qlt=90&bfc=off" id="card4" >
+
+					</picture>
+				</div>
+
+			</div>
+		</div>
+
+
+	</body>
+
+</html>
